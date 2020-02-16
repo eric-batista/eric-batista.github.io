@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .header {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    border-bottom: 1px solid #666;
+    width: 90vw;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.description-text {
+    font-size: 17px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+

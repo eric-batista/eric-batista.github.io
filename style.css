@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-rows: 2fr 2fr;
     justify-items: center;
-    background-image: url(back.jpg);
+    background-image: url(./back.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

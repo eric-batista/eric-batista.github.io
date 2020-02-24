@@ -1,8 +1,6 @@
 import React from 'react';
 import './styles.css';
 
-import About from '../About/index'
-
 import foto from '../../images/foto.jpg';
 
 export default function Home() {
@@ -11,7 +9,7 @@ export default function Home() {
       <ul class="nav-list">
         <li><a class="nav-link" href="/home">Home</a></li>
         <li><a class="nav-link" href="/about">About</a></li>
-        <li><a class="nav-link" href={Home}>Contact</a></li>
+        <li><a class="nav-link" href="/contact">Contact</a></li>
       </ul>
 
       <main>

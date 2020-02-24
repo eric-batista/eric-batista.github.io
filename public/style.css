@@ -187,14 +187,14 @@ body {
 
 
 /* MOBILE */
-@media(max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .nav-bar {
-        width: 100px;
+        padding: 0;
+        width: 70%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 15px;
-        margin-right: auto;
-        margin-left: 60px;
+        margin: 20px auto;
+        text-align:center;
     }
 
     .nav-link {
@@ -202,7 +202,7 @@ body {
     }
 
     .home, .about {
-        max-width: 300px;
+        max-width: 500px;
         height: 90vh;
     }
 
@@ -225,7 +225,11 @@ body {
         background-color: #F5F5F544;
         border-radius: 20px;
         padding: 20px;
-        font-size: 30px;
+        font-size: 10px;
+    }
+
+    .home-description p {
+        font-size: 12px;
     }
 
     .about-container h1 {
@@ -234,6 +238,90 @@ body {
 
     .img-block {
         height: 20%;
+        bottom: 10%;
     }
 
+}
+
+@media(max-width: 570px) {
+    .nav-bar {
+        padding: 0;
+        width: 30%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin: 20px auto;
+        text-align:center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    nav {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0;
+    }
+
+    .home, .about {
+        max-width: 400px;
+        height: 100vh;
+    }
+}
+
+@media(min-width: 768px) {
+    .nav-bar {
+        padding: 0;
+        width: 30%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 70px;
+        margin: 20px auto;
+        text-align:center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+
+@media(max-height: 650px) {
+    .nav-bar {
+        padding: 0;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px auto;
+        text-align:center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
+@media screen and (min-height: 1024px) {
+    .home-content a img {
+        height: 20%;
+    }
+
+    .img-block {
+        height: 20%;
+        bottom: 10%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .home-content a img {
+        height: 20%;
+    }
+
+    .img-block {
+        height: 20%;
+        bottom: 10%;
+    }
 }

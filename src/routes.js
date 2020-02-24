@@ -7,8 +7,8 @@ import About from './pages/About/index';
 export default function Routes() {
   return(
     <BrowserRouter>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
+      <Route path="/eric" exact component={Home} />
+      <Route path="/eric/about" component={About} />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,32 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    max-height: 800px;
+    background-color: #FFF8DC;
+}
+
+.about-container .about-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .about-description h1 {
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 56px;
+}
+
+.about-description p {
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 20px;
+}

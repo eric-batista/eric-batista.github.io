@@ -1,27 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    position: relative;
-}
-
-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat';
-    background-color: #111;
-}
-
 .nav-list {
     height: 10vh;
     display: flex;
     width: 50%;
+    max-width: 300px;
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
     list-style: none;
 }
+
+/* @media screen and (height: 300px) and (width: 300px) {
+    .navlist {
+        display: grid;
+        grid-template-columns: initial;
+        opacity: 0;
+        justify-content: space-evenly;
+    }
+} */
 
 .nav-link {
     text-decoration: none;

@@ -1,6 +1,6 @@
 {
-  "homepage": "https://finnkell.github.io/Finnkell",
-  "name": "frontend",
+  "homepage": "https://finnkell.github.io/eric",
+  "name": "eric",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

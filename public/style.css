@@ -184,3 +184,56 @@ body {
     transition: all 100ms;
     font-size: 18px;
 }
+
+
+/* MOBILE */
+@media(max-width: 500px) {
+    .nav-bar {
+        width: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        margin-right: auto;
+        margin-left: 60px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .home, .about {
+        max-width: 300px;
+        height: 90vh;
+    }
+
+    .home-content img {
+        display: none;
+    }
+
+    .home-content {
+        animation-name: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-description {
+        animation-name: none;
+    }
+
+    .home-description h1 {
+        background-color: #F5F5F544;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .about-container h1 {
+        animation-name: none;
+    }
+
+    .img-block {
+        height: 20%;
+    }
+
+}

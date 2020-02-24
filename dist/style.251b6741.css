@@ -25,13 +25,16 @@ body {
   font-size: 18px;
 }
 .about {
-  background-image: linear-gradient(
-    to top,
-    #0c3483 0%,
-    #a2b6df 100%,
-    #6b8cce 100%,
-    #a2b6df 100%
-  );
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+}
+.contact {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .home {
   background-image: url(/back.c299382f.jpg);
@@ -40,18 +43,19 @@ body {
   background-repeat: no-repeat;
 }
 .home,
-.about {
+.about,
+.contact {
   position: absolute;
   width: 100%;
   height: 90vh;
-  transition: all 1900ms;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   padding: 60px 0px;
 }
 .home-content,
-.about-content {
+.about-content,
+.contact-content {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -59,19 +63,22 @@ body {
   color: #fff8dc;
 }
 .home-content img,
-.about-content img {
+.about-content img,
+.contact-content img {
   height: 70%;
   border-radius: 50%;
   margin-left: 100px;
   border: 2px solid #111;
 }
 .home-content h1,
-.about-content h1 {
+.about-content h1,
+.contact-content h1 {
   font-size: 50px;
   margin: 30px 0;
 }
 .home-content p,
-.about-content p {
+.about-content p,
+.contact-content p {
   font-size: 20px;
 }
 .footer {

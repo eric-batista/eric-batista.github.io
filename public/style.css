@@ -65,33 +65,62 @@ body {
     padding: 130px;
     margin-left: 0px;
     transition: all 1000ms;
+    margin: 40px;
+    padding: 40px;
 }
+
+/* .home-description {
+    -webkit-animation-name: cssAnimation;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+    from {
+        -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+    }
+    to {
+        -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+    }
+} */
 
 .home-content .home-description h1 {
     padding: 0;
     margin: 0;
     font-size: 50px;
-    transition-property: font-size, background-color, border-radius, margin-left, transform, box-shadow;
+    transition-property: font-size, margin-left, padding-bottom;
     transition-timing-function: ease-in-out;
     transition-duration: 700ms;
 }
 
-
 .home-description h1:hover {
     margin-left: 10px;
+    padding-bottom: 10px;
     font-size: 55px;
-    padding: 5px 50px 5px 5px;
-    background-color: #B51630;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    transform: rotate(-5deg);
-    box-shadow: #222 4px 4px 4px;
+    color: #B51630;
+    animation-name: jump;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes jump {
+    0%   {margin-left: 10px;}
+    50%  {margin-left: 20px;}
+    100%  {margin-left: 10px;}
+}
+
+
 
 .home-description p {
     font-size: 20px;
+    color: #30706F;
+    font-weight: bolder;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: #222 1px 2px 24px;
 }
 
 .footer {

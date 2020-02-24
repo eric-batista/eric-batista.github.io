@@ -1,0 +1,104 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background: #222;
+}
+
+.nav-bar {
+    height: 4vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    transition: all 1000ms;
+}
+
+.nav-link {
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    color: #F5F5F5;
+    transition-property: font-size;
+    transition-duration: 500ms;
+}
+
+.nav-link:hover {
+    font-size: 30px;
+    color: #B51630; 
+}
+
+.nav-link::placeholder {
+    color: teal;
+}
+
+
+.home {
+    background-image: url('./photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 90vh;
+    width: 100%;
+}
+
+.home-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content img {
+    margin-right: 30px;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.home-description {
+    font-weight: bolder;
+    padding: 130px;
+    margin-left: 0px;
+    transition: all 1000ms;
+}
+
+.home-content .home-description h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    transition-property: font-size, background-color, border-radius, margin-left, transform, box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: 700ms;
+}
+
+
+.home-description h1:hover {
+    margin-left: 10px;
+    font-size: 55px;
+    padding: 5px 50px 5px 5px;
+    background-color: #B51630;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    transform: rotate(-5deg);
+    box-shadow: #222 4px 4px 4px;
+}
+
+.home-description p {
+    font-size: 20px;
+}
+
+.footer {
+    background: #222;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}

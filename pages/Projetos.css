@@ -1,0 +1,167 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background: #222;
+}
+
+main {
+    background-color: #F5F5F5;
+}
+
+.title {
+    padding: 10px 10px 0px 30px;
+    color: #222;
+    font-size: 20px;
+    margin: 0 40px;
+    border-bottom: #30706F solid 4px;
+}
+
+.nav-bar {
+    height: 4vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    transition: all 500ms;
+}
+
+.nav-link {
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    color: #F5F5F5;
+    transition-property: font-size;
+    transition-duration: 500ms;
+}
+
+.nav-link:hover {
+    font-size: 30px;
+    color: #B51630; 
+}
+
+.Projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+.tindev, .arcnc, .Omni10 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: #111 10px 10px 20px 0px;
+    border-radius: 13px;
+}
+
+.tindev:hover, .arcnc:hover, .Omni10:hover {
+    transition: all 500ms ease-in-out;
+    transform: translateY(-10px) translateX(-5px);
+    box-shadow: #333 20px 20px 20px 0px;
+    animation-name: moveup;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+
+.tindev-container, .arcnc-container, .Omni10-container {
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    flex:1;
+    max-height: 300px;
+    border-radius: 0 0 6px 6px;
+}
+
+.tindev-container {
+    background-color: #FFF8DC;
+}
+
+.arcnc-container {
+    background-color: #30706F;
+}
+
+.Omni10-container {
+    background-color: #B51630;
+}
+
+.tindev-container a {
+    text-decoration: none;
+    color: #B51630;
+    font-size: 20px;
+}
+
+.tindev img, .arcnc img, .Omni10 img {
+    flex: 1;
+    max-width: 100%;
+    padding: 40px;
+    background-color: #111;
+    border-radius: 6px 6px 0 0;
+}
+
+.arcnc-container a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+.Omni10-container a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+.tindev-links, .arcnc-links, .Omni10-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.arcnc-container a:hover, .tindev-container a:hover, .Omni10-container a:hover {
+    transition: all 500ms;
+    cursor: pointer;
+    border-left: #222 solid;
+    padding-left: 5px;
+    animation-name: jump;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    cursor: default;
+}
+
+
+@keyframes jump {
+    0%   {transform: translateX(-1px); padding-left: 10px;}
+    50%  {transform: translateX(0px); padding-left: 5px;}
+    100%  {transform: translateX(-1px); padding-left: 10px;}
+}
+
+@keyframes moveup {
+    0%   {transform: translateY(-7px) translateX(0px);}
+    50%  {transform: translateY(0px) translateX(0px);}
+}
+
+
+@media screen and (max-width: 700px) {
+    .tindev-content p, .arcnc-content p, .Omni10-content p {
+        display: none;
+    }
+
+    .tindev:hover, .arcnc:hover, .Omni10:hover {
+        animation: none;
+        transform: none;
+    }
+
+    main {
+        width: 1000px;
+    }
+
+    .tindev, .arcnc, .Omni10 {
+        width: 100%;
+    }
+}

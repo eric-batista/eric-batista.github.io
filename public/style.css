@@ -86,25 +86,28 @@ body {
     padding: 0;
     margin: 0;
     font-size: 50px;
-    transition-property: font-size, margin-left, padding-bottom;
+    transition-property: all;
     transition-timing-function: ease-in-out;
-    transition-duration: 700ms;
+    transition-duration: 500ms;
 }
 
-.home-description h1 a:hover {
-    margin-left: 10px;
-    padding-bottom: 10px;
-    font-size: 55px;
-    color: #B51630;
+.home-description h1:hover {
     animation-name: jump;
-    animation-duration: .5s;
+    animation-duration: 600ms;
     animation-iteration-count: infinite;
 }
 
+.home-description h1 a:hover {
+    padding-left: 20px;
+    font-size: 55px;
+    color: #B51630;
+    border-left: 3px #222 solid;
+}
+
 @keyframes jump {
-    0%   {margin-left: 10px;}
-    50%  {margin-left: 20px;}
-    100%  {margin-left: 10px;}
+    0%   {transform: translateX(-7px);}
+    50%  {transform: translateX(0px);}
+    100%  {transform: translateX(-7px);}
 }
 
 .home-description p {
@@ -185,84 +188,6 @@ body {
 }
 
 /* PROJETOS */
-.Projetos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.tindev-container {
-    background-color: #F5F5F5;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    border-bottom: #111 solid 6px;
-}
-
-.tindev-container a {
-    text-decoration: none;
-    color: #B51630;
-    font-size: 20px;
-}
-
-.tindev-container img {
-    padding: 0 40px;
-}
-
-.arcnc-container {
-    background-color: #30706F;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    border-bottom: #111 solid 6px;
-}
-
-.arcnc-container a {
-    text-decoration: none;
-    color: #F5F5F5;
-    font-size: 20px;
-}
-
-.arcnc-container img {
-    padding: 0 40px;
-}
-
-
-.Omni10-container {
-    background-color: #B51630;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    border-bottom: #111 solid 6px;
-}
-
-.Omni10-container a {
-    text-decoration: none;
-    color: #F5F5F5;
-    font-size: 20px;
-}
-
-.tindev-links, .arcnc-links, .Omni10-links {
-    display: flex;
-    justify-content: space-around;
-}
-
-.arcnc-container a:hover, .tindev-container a:hover, .Omni10-container a:hover {
-    transition: all 500ms;
-    font-size: 25px;
-    cursor: pointer;
-    border-left: #222 solid;
-    padding-left: 5px;
-    animation-name: jump;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
 
 
 

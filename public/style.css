@@ -28,13 +28,10 @@ body {
 }
 
 .nav-link:hover {
-    font-size: 30px;
+    font-size: 23px;
     color: #B51630; 
 }
 
-.nav-link::placeholder {
-    color: teal;
-}
 
 /* HOME */
 

@@ -28,12 +28,8 @@ body {
 }
 
 .nav-link:hover {
-    font-size: 30px;
+    font-size: 23px;
     color: #B51630; 
-}
-
-.nav-link::placeholder {
-    color: teal;
 }
 
 main {
@@ -45,27 +41,45 @@ main {
 
 .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 20px;
     align-items: center;
 }
 
 .links-title {
-    padding: 30px;
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
     transition: all 500ms;
+}
+
+.links-title h1 {
+    font-size: 30px;
 }
 
 .links {
     padding: 30px;
     font-size: 20px;
     text-align: center;
+    border-radius: 20px;
+    box-shadow: #222 2px 2px 10px ;
+    margin: 0 40px;
+}
+
+.links p {
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .links a {

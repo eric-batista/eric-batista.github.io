@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    background: #222;
+    background: #222222;
 }
 
 .nav-bar {
@@ -22,14 +22,14 @@ body {
     display: flex;
     font-size: 18px;
     text-decoration: none;
-    color: #F5F5F5;
+    color: #FFF;
     transition-property: font-size;
     transition-duration: 500ms;
 }
 
 .nav-link:hover {
     font-size: 23px;
-    color: #B51630; 
+    color: #B51630;
 }
 
 
@@ -61,10 +61,11 @@ body {
     height: 50%;
     border: #30706F solid 4px;
     border-radius: 50%;
+    box-shadow: #222 2px 2px 30px;
 }
 
 .home-content img:hover {
-    height: 70%;
+    height: 60%;
     border: #B51630 solid 4px;
 }
 

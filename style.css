@@ -64,10 +64,10 @@ body {
     box-shadow: #222 2px 2px 30px;
 }
 
-.home-content img:hover {
+/* .home-content img:hover {
     height: 60%;
     border: #B51630 solid 4px;
-}
+} */
 
 .home-description {
     font-weight: bolder;

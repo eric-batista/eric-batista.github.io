@@ -1,43 +1,13 @@
-body {
-    position: relative;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
-    background: #222;
-}
-
-.nav-bar {
-    height: 4vh;
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    list-style: none;
-    transition: all 500ms;
-}
-
-.nav-link {
-    display: flex;
-    font-size: 18px;
-    text-decoration: none;
-    color: #F5F5F5;
-    transition-property: font-size;
-    transition-duration: 500ms;
-}
-
-.nav-link:hover {
-    font-size: 23px;
-    color: #B51630; 
 }
 
 /* SOBRE */
-main {
-    display: inline;
-}
 
 .about {
+    margin: 40px 0;
     flex: 1;
     z-index: 2;
     display: flex;

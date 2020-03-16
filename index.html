@@ -6,24 +6,38 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/monitor.png" type="image/x-icon">
-    <script data-ad-client="ca-pub-4341543134204894" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <title>Eric Batista</title>
 </head>
 <body>
-    <nav>
-        <ul class="nav-bar">
-            <li><a class="nav-link" href="./index.html">Home</a></li>
-            <li><a class="nav-link" href="./pages/Sobre/Sobre.html">Sobre</a></li>
-            <li><a class="nav-link" href="./pages/Contato/Contato.html">Contato</a></li>
-        </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="./pages/Contato/Contato.html">Contato</a></li>
+                <li><a href="./pages/Sobre/Sobre.html">Sobre</a></li>
+              </ul>
+            </div>
+          </div>
     </nav>
 
     <main>
         <section class="home">
             <div class="home-content">
-                <img src="./public/pp.svg" alt="Eu">
-                
+                <img class="img-circle" src="./public/pp.svg" alt="Eu">
+
                 <div class="home-description">
                     <h1 alt="teste"><a href="pages/Sobre.html">Eric Batista</a></h1>
                     <p>Matemática Aplicada e Computacional</p>
@@ -37,92 +51,90 @@
             Portifólio
         </h1>
 
-        <main>
+        <div class="container-fluid text-center">
 
-            <div class="title">
+            <div class="project-title">
                 <h1>Projetos de Desenvolvimento</h1>
             </div>
     
-            <section class="Projetos">
-    
-                <section class="white">
-                    <img src="./public/omni8-logo.svg" alt="Tindev">
-                    <div class="white-container">
-                        <div class="white-content">
-                            <h1>Tindev Semana OmniStack 8.0</h1>
-                            <p>Projeto desenvolvido na Semana Omnistack 8.0, consiste em um clone do Tinder para desenvolvedores, utilizando Node.js para o Backend, ReactJS para o Frontend e ReactNative para Mobile.</p>
-                        </div>
-                        <div class="white-links">
-                            <a target="_blank" href="http://finnkell.github.io/Tindev">Tindev App</a>
-                            <a href="https://github.com/finnkell/Tindev" target="_blank" >Git Repo</a>
-                        </div>
-                    </div>
-                </section>
-    
-                <section class="red">
-                    <img src="./public/Logo.svg" alt="Doe">
-                    <div class="red-container">
-                        <div class="red-content">
-                            <h1>MaratonaDev 8.0</h1>
-                            <p>Projeto desenvolvido na MaratonaDev 8.0, consiste em um site para doação de sangue, utilizando Node.js para o Backend, HTML5 e CSS3 para o Frontend, e PostegreSQL para o Banco de Dados.</p>
-                        </div>
-                        <div class="red-links">
-                            <a href="https://github.com/finnkell/Doe-MaratonaDev" target="_blank" >Git Repo</a>
-                        </div>
-                    </div>
-                </section>
-    
-                <section class="green">
-                    <img src="./public/nu-logo.svg" alt="Nubank">
-                    <div style="background-color: #612F74;" class="green-container">
-                        <div  class="green-content">
-                            <h1>Nubank clone</h1>
-                            <p>Projeto consiste em um clone da interface da Nubank, com a animação de push do menu, utilizando React Native e Expo.</p>
-                        </div>
-                        <div class="green-links">
-                            <a href="https://github.com/finnkell/Nubank" target="_blank" >Git Repo</a>
-                        </div>
-                    </div>
-                </section>
-    
-    
-            </section>
-    
-            <div class="title">
-                <h1>Projetos de Matemática</h1>
-            </div>
-    
-            <section class="Projetos">
-                <section class="white">
-                    <img src="./public/linear-logo.svg" alt="Tindev">
-                    <div class="white-container">
-                        <div class="white-content">
+            <section class="container-fluid">
+                <section class="row">
+                    <div class="col-sm-3">
+                        <div class="content">
                             <h1>Linear Algebra Manim</h1>
                             <p>Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.</p>
                         </div>
-                        <div class="white-links">
+                        <div class="links">
                             <!-- <a target="_blank" href="http://finnkell.github.io/Tindev">Tindev App</a> -->
                             <a href="https://github.com/finnkell/Linear-Algebra" target="_blank" >Git Repo</a>
                         </div>
                     </div>
+                    <img class="img-responsive" src="./public/linear-logo.svg" alt="Tindev">
                 </section>
     
-                <section class="green">
-                    <img src="./public/angelos.svg" alt="Arcnc">
-                    <div style="background-color: orange;" class="green-container">
-                        <div class="green-content">
-                            <h1>Scratch Angelo's Adveture</h1>
-                            <p>Projeto de programação de jogos utilizando Scratch, desenvolvido no Lab Robotica para a elaboração de um curso de Programação em Scratch para alunos do curso de Matemática Aplicada e Computacional.</p>
+                <section class="row">
+                    <div class="col-sm-3">
+                        <div class="content">
+                            <h1>Linear Algebra Manim</h1>
+                            <p>Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.</p>
                         </div>
-                        <div class="green-links">
-                            <a href="https://scratch.mit.edu/projects/284143112" target="_blank" >Game App</a>
-                            <a href="https://github.com/Scratch-MAC" target="_blank" >Git Repo</a>
+                        <div class="links">
+                            <!-- <a target="_blank" href="http://finnkell.github.io/Tindev">Tindev App</a> -->
+                            <a href="https://github.com/finnkell/Linear-Algebra" target="_blank" >Git Repo</a>
                         </div>
                     </div>
+                    <img class="img-responsive" src="./public/linear-logo.svg" alt="Tindev">
+                </section>
+                
+                <section class="row">
+                    <div class="col-sm-3">
+                        <div class="content">
+                            <h1>Linear Algebra Manim</h1>
+                            <p>Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.</p>
+                        </div>
+                        <div class="links">
+                            <!-- <a target="_blank" href="http://finnkell.github.io/Tindev">Tindev App</a> -->
+                            <a href="https://github.com/finnkell/Linear-Algebra" target="_blank" >Git Repo</a>
+                        </div>
+                    </div>
+                    <img class="img-responsive" src="./public/linear-logo.svg" alt="Tindev">
+                </section>
+            </section>
+    
+            <div class="project-title">
+                <h1>Projetos de Matemática</h1>
+            </div>
+    
+            <section class="container-fluid">
+                <section class="row">
+                    <div class="col-sm-3">
+                        <div class="content">
+                            <h1>Linear Algebra Manim</h1>
+                            <p>Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.</p>
+                        </div>
+                        <div class="links">
+                            <!-- <a target="_blank" href="http://finnkell.github.io/Tindev">Tindev App</a> -->
+                            <a href="https://github.com/finnkell/Linear-Algebra" target="_blank" >Git Repo</a>
+                        </div>
+                    </div>
+                    <img class="img-responsive" src="./public/linear-logo.svg" alt="Tindev">
+                </section>
+
+                <section class="row">
+                    <div class="col-sm-3">
+                        <div class="content">
+                            <h1>Linear Algebra Manim</h1>
+                            <p>Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.</p>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/finnkell/Linear-Algebra" target="_blank" >Git Repo</a>
+                        </div>
+                    </div>
+                    <img class="img-responsive" src="./public/linear-logo.svg" alt="Tindev">
                 </section>
     
             </section>
-        </main>
+        </div>
     </section>
 </body>
 </html>

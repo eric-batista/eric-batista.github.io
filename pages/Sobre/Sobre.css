@@ -4,8 +4,27 @@
     box-sizing: border-box;
 }
 
-/* SOBRE */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
 
+#myNavbar .active a {
+    background-color: #30706F;
+    border-radius: 20px;
+}
+
+#myNavbar ul li {
+    margin: 0 30px;
+}
+
+#myNavbar ul li:hover, #myNavbar .active a:hover {
+    transition: all ease-in-out 200ms;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+/* SOBRE */
 .about {
     margin: 40px 0;
     flex: 1;

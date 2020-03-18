@@ -127,11 +127,13 @@ main {
     height: 500px;
     margin: 20px;
     background-color: #30706F;
+    display: flex;
+    flex-direction: column;
 }
  
 .col-sm-3 .img-container {
     height: 200px;
-    max-height: 200px;
+    max-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,14 +146,28 @@ main {
 }
 
 .col-sm-3 p {
+    padding: 10px;
+    text-align: center;
     color: #111;
+    flex: 1;
+}
+
+.col-sm-3 .name-ref {
+    font-size: 12pt;
+    padding: 0;
+}
+
+.col-sm-3 .name-ref:hover {
+    background-color: #30706F;
+    padding: 0;
+    box-shadow: none;
 }
 
 .col-sm-3 a {
     color: #F5F5F5;
     font-size: 20px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 5px;
 }
 
 .col-sm-3 a:hover {

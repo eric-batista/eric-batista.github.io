@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
+main {
+    background-color: #F5F5F5;
+}
+
+.navbar-nav {
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-nav li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px;
 }
 
 #myNavbar .active a {
@@ -15,10 +28,11 @@
 }
 
 #myNavbar ul li {
-    margin: 0 30px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-#myNavbar ul li:hover, #myNavbar .active a:hover {
+.navbar-nav li a:hover, .navbar-nav .active li a:hover {
     transition: all ease-in-out 200ms;
     background-color: #333;
     border-radius: 20px;
@@ -26,13 +40,11 @@
 
 /* SOBRE */
 .about {
-    margin: 40px 0;
-    flex: 1;
+    margin: 60px auto 0 auto;
     z-index: 2;
-    display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 100%;
+    width: 90vw;
     background-color: #F5F5F5;
 }
 

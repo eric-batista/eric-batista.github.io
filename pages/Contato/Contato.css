@@ -24,7 +24,7 @@ main {
 }
 
 #myNavbar .active a {
-    background-color: #30706F;
+    background: linear-gradient(to right, #ff6f00, #ff9100);
     border-radius: 20px;
 }
 
@@ -91,7 +91,7 @@ main {
 .links a {
     text-decoration: none;
     color: #F5F5F5;
-    background-color: #B51630;
+    background: linear-gradient(to right, #ff6f00, #ff9100);
     padding: 10px;
     border-radius: 6px;
     transition: all 300ms;

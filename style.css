@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
 :root {
     --main-color: #ff6f00;
@@ -117,7 +117,7 @@ main {
     background: linear-gradient(to right, #ff6f00, #ff9100);
     transition: all 500ms ease-in-out;
     box-shadow: #333 10px 10px 16px 0px;
-    transform: translate3d(0, 0, 0);
+    transition: all 200ms ease-in-out;
     border: none;
 }
 
@@ -125,6 +125,10 @@ main {
     color: #FFF;
     transition: color 200ms linear;
 } 
+
+.col-sm-3:hover p {
+    padding: 5px;
+}
 
 .col-sm-3 {
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -159,34 +163,19 @@ main {
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 20pt;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }
 
 .col-sm-3 p {
-    padding: 10px;
-    text-align: center;
+    padding: 5px;
+    text-align: left;
     color: #111;
     flex: 1;
-}
-
-.col-sm-3 .name-ref {
-    font-size: 12pt;
-    padding: 0;
-    margin: 0px;
-    color: #222;
-}
-
-.col-sm-3:hover .name-ref {
-    text-decoration: none;
-    color: #FFF;
-    border-radius: none;
-    box-shadow: none;
-    background-color: inherit;
-    margin: 0px;
-    transition: all 200ms ease-in-out;
-}
-
-.col-sm-3:hover .name-ref:hover {
-    color: #222;
+    font-size: 15px;
 }
 
 .col-sm-3 a {
@@ -202,7 +191,6 @@ main {
     color: #FFF;
     border-radius: 5px;
     transition: all 700ms;
-    margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.6) 3px 3px 2px;
 }
 

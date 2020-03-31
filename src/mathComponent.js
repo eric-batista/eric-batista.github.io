@@ -8,7 +8,7 @@ const mathProjects = [
       repo: "https://github.com/Finnkell/Linear-Algebra",
   },
   {
-      img: "./public/angelos.svg",
+      img: "./public/angelos.png",
       imgAlt: "Angelos Adventure",
       name: "Angelo's Adventure",
       description: "Projeto de desenvolvimento de jogos utilizando programação em Scratch. Desenvolvido pelos alunos Eric Batista e Carlos Eduardo, no projeto de extensão em robótica - DEMAT",

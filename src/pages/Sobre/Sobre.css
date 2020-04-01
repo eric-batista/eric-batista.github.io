@@ -19,12 +19,13 @@ main {
 .navbar-nav li a {
     color: #FFF;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
 }
 
 #myNavbar .active a {
     background: linear-gradient(to right, #ff6f00, #ff9100);
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #myNavbar ul li {
@@ -35,7 +36,8 @@ main {
 .navbar-nav li a:hover, .navbar-nav .active li a:hover {
     transition: all ease-in-out 200ms;
     background-color: #333;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 /* SOBRE */
@@ -70,4 +72,10 @@ main {
     text-align: justify;
     transition: all 100ms;
     font-size: 15px;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    main, .about {
+        background-color: #FFF;
+    }
 }

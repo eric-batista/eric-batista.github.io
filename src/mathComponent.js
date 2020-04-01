@@ -3,7 +3,7 @@ const mathProjects = [
       img: "./public/linear-logo.svg",
       imgAlt: "Linear Algebra",
       name: "Linear Algebra Manim",
-      description: "Teste Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.",
+      description: "Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.",
       link: "Git Repo",
       repo: "https://github.com/Finnkell/Linear-Algebra",
   },

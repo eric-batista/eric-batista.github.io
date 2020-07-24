@@ -8,7 +8,7 @@ const mathProjects = [
       repo: "https://github.com/Finnkell/Linear-Algebra",
   },
   {
-    img: "./public/angelos.png",
+    img: "./public/placeholder.png",
     imgAlt: "Tensorflow",
     name: "Learning Tensorflow",
     description: "Projeto de desenvolvimento em algoritmos de IA e estudando a parte matemática dos modelos, utilizando Tensorflow.",

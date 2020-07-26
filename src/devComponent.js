@@ -3,7 +3,7 @@ const devProjects = [
         img: "./public/omni8-logo.svg",
         imgAlt: "Tindev",
         name: "Semana Omnistack 8.0",
-        description: "Aplicativo desenvolvido na Semana Omnistack 8.0, consiste em um 'clone' do Tinder para desenvolvedores, Tindev. Tecnologias utilizadas: NodeJS, ReactJS e React Native.",
+        description: "Aplicativo desenvolvido na Semana Omnistack 8.0, consiste em um 'clone' do Tinder para desenvolvedores. Tecnologias utilizadas: NodeJS, ReactJS e React Native.",
         link: "Git Repo",
         repo: "https://github.com/Finnkell/Tindev",
     },
@@ -51,7 +51,7 @@ const devProjects = [
         img: "./public/whatsapp.svg",
         imgAlt: "Whatsapp",
         name: "Flutter Whatsapp UI clone",
-        description: "Clone do aplicativo do WhatsApp, desenvolvido em Flutter.",
+        description: "Clone da interface do aplicativo WhatsApp. Desenvolvido em Flutter.",
         link: "Git Repo",
         repo: "https://github.com/Finnkell/flutter-whatsapp",
     },
@@ -59,7 +59,7 @@ const devProjects = [
         img: "./public/placeholder.png",
         imgAlt: "FitnessApp",
         name: "Flutter Health and Fitnnes App",
-        description: "Aplicativo que consiste em duas 3 telas, com o tema de Fitness App. Desenvolvido em Flutter.",
+        description: "Aplicativo que consiste em três telas, com o tema de Fitness App. Desenvolvido em Flutter.",
         link: "Git Repo",
         repo: "https://github.com/Finnkell/health-fitness-app",
     },
@@ -67,7 +67,7 @@ const devProjects = [
         img: "./public/placeholder.png",
         imgAlt: "FitnessApp",
         name: "Flutter Infinite Lazily Loaded List",
-        description: "Aplicativo que consiste em duas 3 telas, com o tema de Fitness App. Desenvolvido em Flutter.",
+        description: "Aplicativo que consiste em uma lista infinita de nomes de startups gerados aleatoriamente. Desenvolvido em Flutter",
         link: "Git Repo",
         repo: "https://github.com/Finnkell/Infinite-lazily-loaded-list",
     },
@@ -85,7 +85,7 @@ devProjects.forEach(element => {
             </div>
             <h1>${element.name}</h1>
             <p>${element.description}</p>
-            <a href=${element.repo} target="_blank" >${element.link}</a>
+            <a href=${element.repo} target="_blank" ><i id="icone" class="fab fa-github"></i> ${element.link}</a>
         </div>
     `);
 

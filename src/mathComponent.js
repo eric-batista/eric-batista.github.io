@@ -6,14 +6,16 @@ const mathProjects = [
       description: "Projeto consiste em um repositório de para o curso de Álgebra linear I e Álgebra linear II do curso de Matemática Aplicada e Computacional, utilizando Python e Manim para criar animações e LaTeX para escrever os textos.",
       link: "Git Repo",
       repo: "https://github.com/Finnkell/Linear-Algebra",
+      icon: '<i class="fab fa-github"></i>',
   },
   {
     img: "./public/placeholder.png",
-    imgAlt: "Tensorflow",
-    name: "Learning Tensorflow",
-    description: "Projeto de desenvolvimento em algoritmos de IA e estudando a parte matemática dos modelos, utilizando Tensorflow.",
+    imgAlt: "Linear Programming",
+    name: "Linear Programming",
+    description: "Projeto da disciplina de Programação Linear, consiste em um vídeo montado a partir da ferramenta Manimlib para a apresentação do Método de Jacobi. Desenvolvido em Python.",
     link: "Git Repo",
-    repo: "https://github.com/Finnkell/learning-tensorflow",
+    repo: "https://github.com/Finnkell/Linear-programming",
+    icon: '<i class="fab fa-github"></i>',
 },
   {
       img: "./public/angelos.png",
@@ -22,6 +24,7 @@ const mathProjects = [
       description: "Projeto de desenvolvimento de jogos utilizando programação em Scratch. Desenvolvido pelos alunos Eric Batista e Carlos Eduardo, no projeto de extensão em robótica - DEMAT",
       link: "Scratch Game",
       repo: "https://scratch.mit.edu/projects/284143112/",
+      icon: '<i class="fas fa-gamepad"></i>',
   },
 ];
 
@@ -37,7 +40,7 @@ mathProjects.forEach(element => {
           </div>
           <h1>${element.name}</h1>
           <p>${element.description}</p>
-          <a href=${element.repo} target="_blank" >${element.link}</a>
+          <a href=${element.repo} target="_blank">${element.icon} ${element.link}</a>
       </div>
   `);
 

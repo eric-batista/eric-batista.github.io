@@ -1,0 +1,46 @@
+/* Services section styles */
+section.services {
+    background: var(--color-light);
+}
+
+section.services .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+section.services .container .service {
+    background: var(--color-white);
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    cursor: default;
+    /* border-radius: 1rem; */
+    transition: var(--transition);
+}
+
+section.services .container .service:hover {
+    box-shadow: 0rem 1rem 2rem var(--color-primary-light);
+}
+
+section.services .container .service span {
+    background: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-white);
+}
+
+section.services .container .service:nth-child(2) span {
+    background: var(--color-warning);
+}
+
+section.services .container .service:nth-child(3) span {
+    background: var(--color-success);
+}
